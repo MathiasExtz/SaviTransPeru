@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo1"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#d8000000"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/savitransperu"
+            android:padding="10dp"
+            />
+
+        <Button
+            android:id="@+id/ir_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_redondo_white"
+            android:elevation="5dp"
+            android:onClick="Login"
+            android:text="@string/btn_login"
+            android:textColor="#403f3f"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:id="@+id/inicar_facebook"
+            android:background="@drawable/btn_redondo_blue"
+            android:layout_marginLeft="20dp"
+            android:textColor="#fff"
+            android:elevation="5dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="20dp"
+            android:text="@string/btn_invitado"
+            android:onClick="ListaLugares"
+
+            tools:ignore="OnClick" />
+
+
+    </LinearLayout>
+</RelativeLayout>
