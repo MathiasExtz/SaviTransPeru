@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.savitransperu">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,16 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListaLugares"></activity>
-        <activity android:name=".Registros" />
+        <activity android:name=".views.recyclerview_viajes"></activity>
+        <activity android:name=".views.cardview_item_viaje" />
+        <activity android:name=".views.ListaLugares" />
+        <activity android:name=".views.Registros" />
         <activity
-            android:name=".Login"
+            android:name=".views.Login"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".views.MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".views.SplashScreen"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
 
             <!-- android:theme="@style/Theme.AppCompat.NoActionBar" -->
@@ -31,5 +31,7 @@
             </intent-filter>
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ListaLugares">
+    tools:context=".views.ListaLugares">
 
     <ScrollView
 
@@ -315,7 +315,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="270dp"
                 android:paddingTop="1dp"
-                android:src="@drawable/imagen10huanchaco"
+
                 />
 
             <TextView
@@ -362,7 +362,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="270dp"
                 android:paddingTop="1dp"
-                android:src="@drawable/imagen7arequipa"
+
                 />
 
             <TextView
@@ -409,7 +409,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:paddingTop="1dp"
-                android:src="@drawable/imagen9trujillo"
+
                 />
 
             <TextView
@@ -456,7 +456,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:paddingTop="1dp"
-                android:src="@drawable/imagen12mancora"
+
                 />
 
             <TextView
@@ -503,7 +503,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:paddingTop="1dp"
-                android:src="@drawable/imagen13tumbeszorr"
+
                 />
 
             <TextView

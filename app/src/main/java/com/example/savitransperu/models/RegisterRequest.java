@@ -1,4 +1,4 @@
-package com.example.savitransperu.api;
+package com.example.savitransperu.models;
 
 public class RegisterRequest {
 

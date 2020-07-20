@@ -1,10 +1,12 @@
-package com.example.savitransperu;
+package com.example.savitransperu.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.savitransperu.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(login);
     }
     public void ListaLugares(View view){
-        Intent tarifa = new Intent(this,ListaLugares .class);
+        Intent tarifa = new Intent(this, ListaLugares.class);
         startActivity(tarifa);
     }
 }

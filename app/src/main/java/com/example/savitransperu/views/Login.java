@@ -1,4 +1,4 @@
-package com.example.savitransperu;
+package com.example.savitransperu.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,16 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.TextUtils;
-import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.savitransperu.R;
 import com.example.savitransperu.api.ApiClient;
-import com.example.savitransperu.api.LoginRequest;
-import com.example.savitransperu.api.LoginResponse;
-import com.google.android.material.textfield.TextInputEditText;
+import com.example.savitransperu.models.LoginRequest;
+import com.example.savitransperu.models.LoginResponse;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -66,7 +65,7 @@ public class Login extends AppCompatActivity {
                             @Override
                             public void run() {
 
-                                startActivity(new Intent(Login.this, ListaLugares.class));
+                                startActivity(new Intent(Login.this, recyclerview_viajes.class));
                             }
                         }, 700);
                     }else{

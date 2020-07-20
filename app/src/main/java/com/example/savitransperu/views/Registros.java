@@ -1,4 +1,4 @@
-package com.example.savitransperu;
+package com.example.savitransperu.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,9 +11,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.savitransperu.R;
 import com.example.savitransperu.api.ApiClient;
-import com.example.savitransperu.api.RegisterRequest;
-import com.example.savitransperu.api.RegisterResponse;
+import com.example.savitransperu.models.RegisterRequest;
+import com.example.savitransperu.models.RegisterResponse;
 
 import retrofit2.Call;
 import retrofit2.Callback;

@@ -1,11 +1,11 @@
-package com.example.savitransperu;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.savitransperu.views;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.example.savitransperu.R;
 
 public class SplashScreen extends Activity {
 
