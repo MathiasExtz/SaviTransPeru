@@ -44,7 +44,7 @@ public class recyclerview_viajes extends AppCompatActivity {
             @Override
             public void onFailure(Call<List<Viaje>> call, Throwable t) {
                 //progressDialog.dismiss();
-                Toast.makeText(recyclerview_viajes.this, "Falló algsdasdasdasdo en la conexisón", Toast.LENGTH_LONG).show();
+                Toast.makeText(recyclerview_viajes.this, "Falló algo en la conexisón", Toast.LENGTH_LONG).show();
             }
         });
 
