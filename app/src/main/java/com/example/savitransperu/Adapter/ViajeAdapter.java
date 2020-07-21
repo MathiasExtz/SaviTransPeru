@@ -52,15 +52,18 @@ public class ViajeAdapter extends RecyclerView.Adapter<ViajeAdapter.ViewHolder> 
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         public TextView textView;
+        public TextView textView2;
         public ImageView imageView;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             textView = itemView.findViewById(R.id.info_text);
+            textView2 = itemView.findViewById(R.id.info_text2);
             imageView =  itemView.findViewById(R.id.imageCardview);
         }
 
         public void bind(final Viaje viaje, final OnItemClickListener listener){
             textView.setText(viaje.getDestino());
+            textView2.setText("Cantidad de Asientos: " +    String.valueOf(viaje.getCantidadAsientos()));
             Picasso.get().load(viaje.getImgUrl()+"").resize(370, 170).centerCrop().into(imageView);
             //imageView.setImageResource(viaje.getImg());
             itemView.setOnClickListener(new View.OnClickListener() {

@@ -1,25 +1,25 @@
 package com.example.savitransperu.models;
 
 public class Viaje {
-    private String id;
+    private int id;
     private String origen;
     private String destino;
-    private String puntoEmbarque;
-    private String cantidadAsientos;
-    private String precioAsientoNormal;
-    private String precioAsientoVip;
+    private String PuntoEmbarque;
+    private int CantidadAsientos;
+    private double PrecioAsientoNormal;
+    private double precioAsientoVip;
     private String diaSalida;
     private String horaSalida;
     private String imgUrl;
     private int img;
 
-    public Viaje(String id, String origen, String destino, String puntoEmbarque, String cantidadAsientos, String precioAsientoNormal, String precioAsientoVip, String diaSalida, String horaSalida,String imgUrl, int img) {
+    public Viaje(int id, String origen, String destino, String PuntoEmbarque, int CantidadAsientos, double PrecioAsientoNormal, double precioAsientoVip, String diaSalida, String horaSalida,String imgUrl, int img) {
         this.id = id;
         this.origen = origen;
         this.destino = destino;
-        this.puntoEmbarque = puntoEmbarque;
-        this.cantidadAsientos = cantidadAsientos;
-        this.precioAsientoNormal = precioAsientoNormal;
+        this.PuntoEmbarque = PuntoEmbarque;
+        this.CantidadAsientos = CantidadAsientos;
+        this.PrecioAsientoNormal = PrecioAsientoNormal;
         this.precioAsientoVip = precioAsientoVip;
         this.diaSalida = diaSalida;
         this.horaSalida = horaSalida;
@@ -35,11 +35,11 @@ public class Viaje {
         this.img = img;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -60,34 +60,34 @@ public class Viaje {
     }
 
     public String getPuntoEmbarque() {
-        return puntoEmbarque;
+        return PuntoEmbarque;
     }
 
     public void setPuntoEmbarque(String puntoEmbarque) {
-        this.puntoEmbarque = puntoEmbarque;
+        this.PuntoEmbarque = puntoEmbarque;
     }
 
-    public String getCantidadAsientos() {
-        return cantidadAsientos;
+    public int getCantidadAsientos() {
+        return CantidadAsientos;
     }
 
-    public void setCantidadAsientos(String cantidadAsientos) {
-        this.cantidadAsientos = cantidadAsientos;
+    public void setCantidadAsientos(int cantidadAsientos) {
+        this.CantidadAsientos = cantidadAsientos;
     }
 
-    public String getPrecioAsientoNormal() {
-        return precioAsientoNormal;
+    public double getPrecioAsientoNormal() {
+        return PrecioAsientoNormal;
     }
 
-    public void setPrecioAsientoNormal(String precioAsientoNormal) {
-        this.precioAsientoNormal = precioAsientoNormal;
+    public void setPrecioAsientoNormal(double precioAsientoNormal) {
+        this.PrecioAsientoNormal = precioAsientoNormal;
     }
 
-    public String getPrecioAsientoVip() {
+    public double getPrecioAsientoVip() {
         return precioAsientoVip;
     }
 
-    public void setPrecioAsientoVip(String precioAsientoVip) {
+    public void setPrecioAsientoVip(double precioAsientoVip) {
         this.precioAsientoVip = precioAsientoVip;
     }
 

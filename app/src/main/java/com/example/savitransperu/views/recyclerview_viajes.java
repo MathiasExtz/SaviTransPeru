@@ -5,7 +5,9 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.widget.Toast;
 
 import com.example.savitransperu.Adapter.ViajeAdapter;
@@ -42,7 +44,7 @@ public class recyclerview_viajes extends AppCompatActivity {
             @Override
             public void onFailure(Call<List<Viaje>> call, Throwable t) {
                 //progressDialog.dismiss();
-                Toast.makeText(recyclerview_viajes.this, "Falló la conexión", Toast.LENGTH_LONG).show();
+                Toast.makeText(recyclerview_viajes.this, "Falló algsdasdasdasdo en la conexisón", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -60,6 +62,13 @@ public class recyclerview_viajes extends AppCompatActivity {
             @Override
             public void onItemClick(Viaje viaje, int position) {
                 Toast.makeText(recyclerview_viajes.this, viaje.getDestino() + " - " + position, Toast.LENGTH_LONG).show();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+
+                        startActivity(new Intent(recyclerview_viajes.this, ListaLugares.class));
+                    }
+                }, 700);
             }
         });
         mRecyclerView.setHasFixedSize(true);
