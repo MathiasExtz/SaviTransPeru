@@ -66,7 +66,7 @@ public class recyclerview_viajes extends AppCompatActivity {
                     @Override
                     public void run() {
 
-                        startActivity(new Intent(recyclerview_viajes.this, ListaLugares.class));
+                        startActivity(new Intent(recyclerview_viajes.this, info_viaje.class));
                     }
                 }, 700);
             }
