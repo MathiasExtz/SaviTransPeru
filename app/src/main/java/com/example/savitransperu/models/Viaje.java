@@ -1,5 +1,10 @@
 package com.example.savitransperu.models;
 
+
+import android.util.Log;
+
+import java.util.Date;
+
 public class Viaje {
     private int id;
     private String origen;
@@ -8,12 +13,12 @@ public class Viaje {
     private int CantidadAsientos;
     private double PrecioAsientoNormal;
     private double precioAsientoVip;
-    private String diaSalida;
-    private String horaSalida;
+    private Date FechaSalida;
+    private String HoraSalida;
     private String imgUrl;
     private int img;
 
-    public Viaje(int id, String origen, String destino, String PuntoEmbarque, int CantidadAsientos, double PrecioAsientoNormal, double precioAsientoVip, String diaSalida, String horaSalida,String imgUrl, int img) {
+    public Viaje(int id, String origen, String destino, String PuntoEmbarque, int CantidadAsientos, double PrecioAsientoNormal, double precioAsientoVip, Date FechaSalida, String HoraSalida, String imgUrl, int img) {
         this.id = id;
         this.origen = origen;
         this.destino = destino;
@@ -21,8 +26,8 @@ public class Viaje {
         this.CantidadAsientos = CantidadAsientos;
         this.PrecioAsientoNormal = PrecioAsientoNormal;
         this.precioAsientoVip = precioAsientoVip;
-        this.diaSalida = diaSalida;
-        this.horaSalida = horaSalida;
+        this.FechaSalida = FechaSalida;
+        this.HoraSalida = HoraSalida;
         this.setImgUrl(imgUrl);
         this.img = img;
     }
@@ -91,20 +96,20 @@ public class Viaje {
         this.precioAsientoVip = precioAsientoVip;
     }
 
-    public String getDiaSalida() {
-        return diaSalida;
+    public Date getFechaSalida() {
+        return FechaSalida;
     }
 
-    public void setDiaSalida(String diaSalida) {
-        this.diaSalida = diaSalida;
+    public void setFechaSalida(Date diaSalida) {
+        this.FechaSalida = diaSalida;
     }
 
     public String getHoraSalida() {
-        return horaSalida;
+        return HoraSalida;
     }
 
     public void setHoraSalida(String horaSalida) {
-        this.horaSalida = horaSalida;
+        HoraSalida = horaSalida;
     }
 
     public String getImgUrl() {
@@ -114,4 +119,6 @@ public class Viaje {
     public void setImgUrl(String imgUrl) {
         this.imgUrl = imgUrl;
     }
+
+
 }
